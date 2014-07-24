@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+   <head>
+      <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+      <link rel='stylesheet' type='text/css' href='css/homePage.css' />
+      <link rel='stylesheet' type='text/css' href='css/common.css' />
+      <title>Audio Root</title>
+   </head>
+
+   <body>
+
+      <div id="mainPage" class="mainPage">
+         <div id="headerBar" class="headerBar">
+            <div id="headerLogo" class="headerLogo">
+               <img src="png/verification5.png"></img>
+            </div>
+            <div id="headerSearch"  class="headerSearch">
+               <form id="searchForm" method="post">
+                  <input id="search" class="search" type="text" />
+               </form>
+            </div>
+            <div id="headerHome"  class="headerHomeUnselected" onclick="activeIndicator(this.id)">
+               <img src="png/verification5.png"></img>
+            </div>
+            <div id="headerCreate"  class="headerCreateUnselected" onclick="activeIndicator(this.id)">
+               <img src="png/verification5.png"></img>
+            </div>
+            <div id="headerBrowse"  class="headerBrowseUnselected" onclick="activeIndicator(this.id)">
+               <img src="png/verification5.png"></img>
+            </div>
+            <div id="headerContact"  class="headerContactUnselected" onclick="activeIndicator(this.id)">
+               <img src="png/verification5.png"></img>
+            </div>
+            <div id="headerProfile"  class="headerProfile menu">
+               <img src="png/verification5.png"></img>
+               <ul class="dropDownList">
+                  <li class="dropDownListItem"><a href="#">level 2 1</a></li>
+                  <li class="dropDownListItem"><a href="#">level 2 2</a></li>
+                  <li class="dropDownListItem"><a href="#">level 2 3</a>
+                     <ul class="dropDownList">
+                        <li class="dropDownListItem"><a href="#">level 3 1</a></li>
+                        <li class="dropDownListItem"><a href="#">level 3 2</a>
+                           <ul class="dropDownList">
+                              <li class="dropDownListItem"><a href="#">level 4 1</a></li>
+                              <li class="dropDownListItem"><a href="#">level 4 2</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div id="arrowIndicator" class="arrowIndicator">
+            <img src="png/indicator.png" class="fill"></img>
+         </div>
+         <div id="content">
+            <img src="png/contentBG.png" class="fill"></img>
+         </div>
+         <div id="footer" class="footer">
+            <a href="">Legal</a> | <a href="">Privacy Policy</a>
+         </div>
+      </div>
+   </body>
+   <script>
+      var currentActivedIndicatorID = "";
+
+      function deactiveIndicator(id)
+      {
+         if (id !== "")
+         {
+            document.getElementById(id).className = id + "Unselected";
+         }
+      }
+
+      function activeIndicator(id)
+      {
+         if (id !== "")
+         {
+            deactiveIndicator(currentActivedIndicatorID);
+            document.getElementById(id).className = id + "Selected";
+            currentActivedIndicatorID = id;
+         }
+      }
+   </script>
+</html>
