@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 30, 2014, 11:04:59 AM
+    Author     : Tao Li
+*/
+
+.footer
+{
+   color: black;
+   text-align: center;
+}
+
+.footer > a:link
+{
+   text-decoration: none;
+   color: black;
+}
+
+.footer > a:visited
+{
+   text-decoration: none;
+   color: black;
+}
+
+.footer > a:hover
+{
+   text-decoration: none;
+   color: blue;
+}
+
+.footer > a:active 
+{
+   text-decoration: none;
+   color: blue;
+}

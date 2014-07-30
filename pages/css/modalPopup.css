@@ -4,56 +4,9 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Jul 23, 2014, 12:49:29 PM
+    Created on : Jul 30, 2014, 11:05:50 AM
     Author     : Tao Li
 */
-
-.fill
-{
-   width: 100%;
-   height: 100%;
-}
-
-.menu
-{
-   font: 12px/18px sans-serif;
-}
-
-.menu:hover
-{
-}
-
-.dropDownList
-{
-   padding: 0;
-   margin: 0 0 0 0;
-   position: absolute;
-   float: none;
-   visibility: hidden;
-}
-
-.dropDownList:hover
-{
-}
-
-.menu:hover > .dropDownList,
-.dropDownListItem:hover > .dropDownList
-{
-   display: block;
-   visibility: visible;
-}
-
-.dropDownListItem
-{ 
-   display: block; 
-   float: none;
-   position: relative;
-}
-
-.dropDownListItem:hover
-{
-   background: white;
-}
 
 .modalPopup
 {

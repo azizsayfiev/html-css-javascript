@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 30, 2014, 11:08:34 AM
+    Author     : Tao Li
+*/
+
+.menu
+{
+}
+
+.menu:hover
+{
+}
+
+.dropDownList
+{
+   padding: 0;
+   margin: 0 0 0 0;
+   position: absolute;
+   float: none;
+   visibility: hidden;
+}
+
+.dropDownList:hover
+{
+}
+
+.menu:hover > .dropDownList,
+.dropDownListItem:hover > .dropDownList
+{
+   display: block;
+   visibility: visible;
+}
+
+.dropDownListItem
+{ 
+   display: block; 
+   float: none;
+   position: relative;
+}
+
+.dropDownListItem:hover
+{
+   background: white;
+}
