@@ -34,24 +34,13 @@ and open the template in the editor.
             <img src="png/verification5.png"></img>
          </div>
          <div id="headerContact"  class="headerContactUnselected" onclick="activeIndicator(this.id)">
-            <img src="png/verification5.png"></img>
+            <img src="png/verification5.png"><a herf="contactUs.jsp"></a></img>
          </div>
          <div id="headerProfile"  class="headerProfile menu">
             <img src="png/verification5.png"></img>
             <ul class="dropDownList">
-               <li class="dropDownListItem"><a href="#">level 2 1</a></li>
-               <li class="dropDownListItem"><a href="#">level 2 2</a></li>
-               <li class="dropDownListItem"><a href="#">level 2 3</a>
-                  <ul class="dropDownList">
-                     <li class="dropDownListItem"><a href="#">level 3 1</a></li>
-                     <li class="dropDownListItem"><a href="#">level 3 2</a>
-                        <ul class="dropDownList">
-                           <li class="dropDownListItem"><a href="#">level 4 1</a></li>
-                           <li class="dropDownListItem"><a href="#">level 4 2</a></li>
-                        </ul>
-                     </li>
-                  </ul>
-               </li>
+               <li class="dropDownListItem"><a href="#">My Profile</a></li>
+               <li class="dropDownListItem"><a href="#">Sign out</a></li>
             </ul>
          </div>
       </div>
